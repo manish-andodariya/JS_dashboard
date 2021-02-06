@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Test | Register</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <div class="register-box">
+        <form action="login.html" class="r_form" id="r_form" method="POST">
+            <h1>Registeration</h1>
+            <input type="text" name="r_name" id="r_name" required placeholder="Name" />
+            <input type="email" name="r_email" id="r_email" required placeholder="Email" />
+            <input type="password" name="r_password" id="r_password" minlength="8" maxlength="12" required
+                placeholder="Password" />
+            <input type="password" name="r_confirm_password" id="r_confirm_password" required minlength="8"
+                maxlength="12" placeholder="Re-Password" />
+            <select name="r_city" id="r_city" required>
+                <option value="">Select City</option>
+                <option value="Rajkot">Rajkot</option>
+                <option value="Ahmedabad">Ahmedabad</option>
+                <option value="Surat">Surat</option>
+                <option value="Pune">Pune</option>
+                <option value="Jaipur">Jaipur</option>
+            </select>
+            <select name="r_state" id="r_state" required>
+                <option value="">Select State</option>
+                <option value="Gujarat">Gujarat</option>
+                <option value="Maharastra">Maharastra</option>
+                <option value="Rajasthan">Rajasthan</option>
+            </select>
+            <table>
+                <tr>
+                    <td>
+                        <input type="checkbox" name="r_tnc" id="r_tnc" required onclick="checkbtn()" checked />
+                    </td>
+                    <td>Terms & Conditions</td>
+                </tr>
+            </table>
+            <button type="submit" class="r_btn" id="r_btn">Register</button>
+        </form>
+    </div>
+    <script src="register.js"></script>
+</body>
+
+</html>

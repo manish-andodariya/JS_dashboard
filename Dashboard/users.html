@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Test | users</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="sidebar">
+            <div class="user-display">
+                <h3>Hello ,[USER]</h3>
+            </div>
+            <div class="navigations">
+                <ul>
+                    <li><a href="dashboard.html" class="dashboard">Dashboard</a></li>
+                    <li><a href="users.html" class="users">Users</a></li>
+                    <li>
+                        <a href="login-sessions.html" class="loginsessions">Login Session</a>
+                    </li>
+                    <li><a href="#" class="logout">Logout</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <h3>Add Users</h3>
+            <div class="form-add-user">
+                <form>
+                    <input type="text" name="name" id="name" placeholder="Name" required />
+                    <input type="email" name="email" id="email" placeholder="Email" required />
+                    <input type="password" name="password" id="password" placeholder="password" minlength="8"
+                        maxlength="12" required />
+                    <input type="date" name="date" id="date" placeholder="BirthDate" required />
+                    <input type="submit" value="AddUser" class="adduser" id="adduser" />
+                </form>
+            </div>
+            <h3>User List</h3>
+            <center>
+                <div class="userlist">
+                    <table border="1">
+                        <tr>
+                            <td>Name</td>
+                            <td>Email</td>
+                            <td>Password</td>
+                            <td>Age</td>
+                            <td>BirthDay</td>
+                        </tr>
+                    </table>
+                </div>
+            </center>
+        </div>
+    </div>
+    <script src="users.js"></script>
+    <script src="logout.js"></script>
+</body>
+
+</html>
